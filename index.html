@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My firstform</title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>My first form</h1>
+        </header>
+
+        <form action="./thanks.html" method="post" name="submit" netlify>
+            <fieldset>
+                <legend>Your Information</legend>
+
+                <div>
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName" >
+                </div>
+
+                <div>
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName" >
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required >
+                </p>
+
+                <p>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" name="phone" id="phone" placeholder="1 (555) 555-5555" maxlength="10" >
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Query Information</legend>
+                <label for="Query">Query:</label>
+                <select name="Query" id="Query" required>
+                    <option value="">Query</option>
+                    <option value="Carrier Opportunity">Carrier Opportunity</option>
+                    <option value="Buisness Proposal">Buisness Proposal</option>
+                    <option value="General Query">General Query</option>
+                    <option value="Complaint">Complaint</option>
+                </select>
+                <div>
+                    <label for="Message">Message:</label>
+                    <textarea name="Message" id="Message" cols="30" rows="10"></textarea>
+                </div>
+            </fieldset>
+            </form>
+    </main>
+    <div>
+        <input type="submit" value="Submit" >
+    </div>
+</body>
+
+</html>
